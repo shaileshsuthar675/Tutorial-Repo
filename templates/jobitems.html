@@ -1,0 +1,19 @@
+<div class="border-bottom row" style="margin-bottom: 16px; padding-bottom: 8px; padding-right: 18px;">
+    <div class="col">
+        <p class="h5">{{job['Job Title']}}</p>
+        <div>
+            <b>Location:</b> {{job['Location']}}
+        </div>
+        {% if 'Salary' in job %}
+        <div>
+            <b>Salary:</b> {{job['Salary']}}
+        </div>
+        <!-- <hr class="dropdown-divider"> -->
+        <!-- <br> -->
+        {% endif %}
+    </div>
+    <div class="col" style="text-align: right; margin-top:auto; margin-bottom:auto;">
+        <button type="button" class="btn btn-outline-primary">Apply</button>
+    </div>
+
+</div>
